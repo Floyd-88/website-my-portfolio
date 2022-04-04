@@ -16,3 +16,10 @@
   margin: auto;
   background-color: white;
 }
+.modal__content {
+  padding: 5rem 1rem;
+}
+.modal__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
