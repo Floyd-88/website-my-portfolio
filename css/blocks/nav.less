@@ -1,4 +1,4 @@
-// main ../style.less
+// main ./style.less
 .nav {
     display: flex;
     height: 100%;
@@ -15,8 +15,7 @@
     font-weight: bold;
     text-decoration: none;
   
-    
-    
+   
     &::after {
         content: "";
         position: absolute;
@@ -27,6 +26,7 @@
         left: 0;
         z-index: 1;
         transition: .2s linear;
+        
 
     }
     &:hover:not(.nav__link--btn) {

@@ -1,0 +1,55 @@
+// main ../style.less
+
+.about {
+    margin: 8.4rem 0;
+}
+.about_inner {
+    display: flex;
+    max-width: 1090px;
+}
+.about__foto,
+.about_content {
+width:50%;
+}
+.about__foto {
+    
+        position: relative;
+        z-index: 2;
+    
+    &::before {
+        content: "";
+        width: 413px;
+        height: 413px;
+        background-color: rgba(106,105,107,0.1);
+        position: absolute;
+        left: 1rem;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+.about_content {
+    padding-left: 3.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.about__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: @black;
+    text-transform: uppercase;
+}
+.about__bigTitle {
+ 
+    font-size: 6.13rem;
+    margin-bottom: 1.4rem;
+    line-height: 1.1;
+    color: fade(@black, 15%);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.about__text {
+    margin-bottom: 3.8rem;
+    font-size: 0.8rem;
+    color: @grey-light;
+    line-height: 2;
+}
