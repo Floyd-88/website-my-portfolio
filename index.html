@@ -12,7 +12,7 @@
     <title>My portfolio</title>
 </head>
 
-<body>
+<body class="no__scroll">
     <!-- block header -->
     <header class="header">
         <div class="container">
@@ -355,6 +355,52 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <button class="modal-close" type="button">
+                <img src="images/close.png" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <img class="modal-work__foto" src="images/1.png" alt="">
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title</h3>
+                        <div class="modal-work__info">
+                            Categoriy<span class="modal-work__info-span">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Agensy</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat, obcaecati veritatis libero fugit temporibus! Aspernatur, placeat commodi ipsum dolorum veniam expedita distinctio blanditiis ullam fuga, dignissimos ad deserunt
+                            aliquid!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, ex saepe totam facilis labore sequi laboriosam nulla laborum assumenda, obcaecati impedit dignissimos magni quo cupiditate mollitia amet voluptatem distinctio.
+                            At?
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work_btn modal-work_btn--back" type="button">
+                            <img src="images/next.png" height="12px" alt="back">
+                            Back
+                        </button>
+                        <button class="modal-work_btn modal-work_btn--next" type="button">
+                            Next
+                            <img src="images/next.png" height="12px" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
