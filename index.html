@@ -12,7 +12,7 @@
     <title>My portfolio</title>
 </head>
 
-<body class="no__scroll">
+<body>
     <!-- block header -->
     <header class="header">
         <div class="container">
@@ -403,14 +403,14 @@
     </div>
 
 
-    <div class="modal">
+    <div class="modal" style="display: none;">
         <div class="modal__dialog">
             <button class="modal-close" type="button">
                 <img src="images/close.png" alt="close">
             </button>
 
             <div class="modal__content">
-                <h3 class="modal__title">Резюме</h3>
+                <h3 class="modal__title" style="text-align: center;">Резюме</h3>
                 <div class="text__center">
                     <a class="btn btn--thin" href="#">Скачать PDF</a>
                     <a class="btn btn--thin" href="#">Распечатать</a>
@@ -482,8 +482,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="progress-bar">
+
+
                             <div class="progress-bar__item">
                                 <div class="progress-bar__left">
                                     <div class="progress-bar__title">
@@ -497,8 +497,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="progress-bar">
+
+
                             <div class="progress-bar__item">
                                 <div class="progress-bar__left">
                                     <div class="progress-bar__title">
@@ -512,8 +512,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="progress-bar">
+
+
                             <div class="progress-bar__item">
                                 <div class="progress-bar__left">
                                     <div class="progress-bar__title">
@@ -544,6 +544,47 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="modal" style="display: none;">
+        <div class="modal__dialog modal__dialog--sm">
+            <button class="modal-close" type="button">
+                <img src="images/close.png" alt="close">
+            </button>
+
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0 ">Контакты</h3>
+                    <div class="modal__subtitle">Позвонить или написать мне</div>
+
+                    <ul class="contact_info">
+                        <li class="contact_info-item">
+                            <img class="contact_info-icon" style="width: 20px;" src="images/phone.png" alt="phone"> 8-905-411-06-92
+                        </li>
+                        <li class="contact_info-item">
+                            <img class="contact_info-icon" style="width: 20px;" src="images/email.png" alt="email"> ilasaz1968@gmail.com
+                        </li>
+                    </ul>
+                    <form class="form" action="/" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">Адрес e-mail</label>
+                            <input class="form__input" type="text" name="input-email" id="input-email" placeholder="Адрес e-mail">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="input-text">Запрос</label>
+                            <textarea class="form__textarea" placeholder="Введите ваше сообщение..." name="input-text" id="input-text"></textarea>
+                        </div>
+                        <div class="text__right"> <button class="btn" type="submit">Отправить</button></div>
+                </div>
+
+                </form>
+                <div class="contact__right">
+                </div>
+            </div>
+
+        </div>
+    </div>
     </div>
 </body>
 
