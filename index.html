@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0, 200;0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <title>My portfolio</title>
 </head>
 
@@ -31,7 +33,7 @@
                     <a class="nav__link" href="#">Про меня</a>
                     <a class="nav__link" href="#">Блог</a>
                     <a class="nav__link" href="#">Контакт</a>
-                    <a class="nav__link nav__link--btn" href="#">Найми меня</a>
+                    <a class="nav__link nav__link--btn" data-btn="contact" href="#" onclick="showModal(this)">Найми меня</a>
 
                 </div>
             </div>
@@ -66,8 +68,8 @@
                             <img src="images/Twitter.png" alt="">
                         </a>
                     </div>
-                    <a class="btn" href="">Найми меня</a>
-                    <button class="btn">Посмотреть мое резюме</button>
+                    <a class="btn" href="" data-btn="contact" onclick="showModal(this)">Найми меня</a>
+                    <button class="btn" data-btn="resume" onclick="showModal(this)">Посмотреть мое резюме</button>
                 </div>
                 <img class="intro__foto" src="images/designer_photo.png" alt="my foto">
             </div>
@@ -80,19 +82,19 @@
     <div class="works">
         <div class="container">
             <div class="works__nav">
-                <a class="works_nav-link" href="">All</a>
-                <a class="works_nav-link" href="">App</a>
-                <a class="works_nav-link" href="">Website</a>
-                <a class="works_nav-link" href="">Interaction</a>
+                <a class="works_nav-link" data-link="all" href="">Все</a>
+                <a class="works_nav-link" data-link="app" href="">Приложения</a>
+                <a class="works_nav-link" data-link="website" href="">Сайты</a>
+                <a class="works_nav-link" data-link="interection" href="">Interaction</a>
 
             </div>
             <div class="portfolio">
-                <div class="portfolio__col">
-                    <div class="work">
+                <div class="portfolio__col" data-work="website">
+                    <div class="work" data-btn="previews" onclick="showModal(this)">
                         <img class="work__image" src="images/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                CATEGORY
+                                CATEGORY: website
                             </div>
                             <div class="work__title">
                                 PROJECT TITLE
@@ -102,12 +104,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-work="website">
                     <div class="work">
                         <img class="work__image" src="images/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                CATEGORY
+                                CATEGORY: website
                             </div>
                             <div class="work__title">
                                 PROJECT TITLE
@@ -117,12 +119,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-work="interection">
                     <div class="work">
                         <img class="work__image" src="images/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                CATEGORY
+                                CATEGORY: interection
                             </div>
                             <div class="work__title">
                                 PROJECT TITLE
@@ -132,12 +134,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-work="app">
                     <div class="work">
                         <img class="work__image" src="images/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                CATEGORY
+                                CATEGORY: app
                             </div>
                             <div class="work__title">
                                 PROJECT TITLE
@@ -147,12 +149,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-work="app">
                     <div class="work">
                         <img class="work__image" src="images/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                CATEGORY
+                                CATEGORY: app
                             </div>
                             <div class="work__title">
                                 PROJECT TITLE
@@ -162,12 +164,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-work="app">
                     <div class="work">
                         <img class="work__image" src="images/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                CATEGORY
+                                CATEGORY: app
                             </div>
                             <div class="work__title">
                                 PROJECT TITLE
@@ -201,8 +203,8 @@
                             Nisi mollitia, labore at voluptate fugit dolorum sit nihil </p>
                         <p>obcaecati minima adipisci. Sit consequuntur dolor autem perferendis nostrum aut maxime repellendus fugiat voluptatem adipisci illum, repellat excepturi natus accusantium. Maxime quaerat temporibus ex necessitatibus!</p>
                     </div>
-                    <a class="btn" href="">Найми меня</a>
-                    <button class="btn">Посмотреть мое резюме</button>
+                    <a class="btn" href="" data-btn="contact" onclick="showModal(this)">Найми меня</a>
+                    <button class="btn" data-btn="resume" onclick="showModal(this)">Посмотреть мое резюме</button>
                 </div>
             </div>
         </div>
@@ -326,22 +328,22 @@
                     </div>
                     <div class="footer__social">
                         <a href="#" target="_blank">
-                            <img src="/images/be_footer.png" alt="be">
+                            <img src="images/be_footer.png" alt="be">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="/images/dribbble_footer.png" alt="dribbble">
+                            <img src="images/dribbble_footer.png" alt="dribbble">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="/images/in_footer.png" alt="in">
+                            <img src="images/in_footer.png" alt="in">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="/images/fb_footer.png" alt="fb">
+                            <img src="images/fb_footer.png" alt="fb">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="/images/instagram_footer.png" alt="instagram">
+                            <img src="images/instagram_footer.png" alt="instagram">
                         </a>
                         <a href="#" target="_blank">
-                            <img src="/images/twitter_footer.png" alt="twitter">
+                            <img src="images/twitter_footer.png" alt="twitter">
                         </a>
                     </div>
                 </div>
@@ -350,7 +352,7 @@
                     <a class="footer__nav-link" href="#">Обо мне</a>
                     <a class="footer__nav-link" href="#">Блог</a>
                     <a class="footer__nav-link" href="#">Контакт</a>
-                    <a class="footer__nav-link footer__nav-link--btn" href="#">Найми меня</a>
+                    <a class="footer__nav-link footer__nav-link--btn" href="#" data-btn="contact" onclick="showModal(this)">Найми меня</a>
                 </div>
             </div>
         </div>
@@ -358,7 +360,7 @@
 
     <!-- Modals -->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="previews">
         <div class="modal__dialog">
             <button class="modal-close" type="button">
                 <img src="images/close.png" alt="close">
@@ -403,7 +405,7 @@
     </div>
 
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="resume">
         <div class="modal__dialog">
             <button class="modal-close" type="button">
                 <img src="images/close.png" alt="close">
@@ -540,14 +542,14 @@
 
                 </div>
                 <div class="text__center">
-                    <a class="btn" href="#">Найми меня</a>
+                    <a class="btn" href="#" data-btn="contact" onclick="showModal(this)">Найми меня</a>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="contact">
         <div class="modal__dialog modal__dialog--sm">
             <button class="modal-close" type="button">
                 <img src="images/close.png" alt="close">
@@ -555,7 +557,7 @@
 
             <div class="contact">
                 <div class="contact__left">
-                    <h3 class="modal__title mb-0 ">Контакты</h3>
+                    <h3 class="modal__title mb-0">Контакты</h3>
                     <div class="modal__subtitle">Позвонить или написать мне</div>
 
                     <ul class="contact_info">
@@ -586,6 +588,8 @@
         </div>
     </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
