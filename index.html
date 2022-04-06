@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>My portfolio</title>
 </head>
 
@@ -105,7 +106,7 @@
                     </div>
                 </div>
                 <div class="portfolio__col" data-work="website">
-                    <div class="work">
+                    <div class="work" data-btn="previews2" onclick="showModal(this)">
                         <img class="work__image" src="images/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
@@ -367,7 +368,17 @@
             </button>
             <div class="modal-work">
                 <div class="modal-work__previews">
-                    <img class="modal-work__foto" src="images/1.png" alt="">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__foto" src="images/1.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__foto" src="images/2.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__foto" src="images/2.png" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-work__content">
                     <div class="modal-work__header">
@@ -390,11 +401,11 @@
                         </p>
                     </div>
                     <div class="modal-work__footer">
-                        <button class="modal-work_btn modal-work_btn--back" type="button">
+                        <button class="modal-work_btn modal-work_btn--back slickBack" type="button">
                             <img src="images/next.png" height="12px" alt="back">
                             Back
                         </button>
-                        <button class="modal-work_btn modal-work_btn--next" type="button">
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">
                             Next
                             <img src="images/next.png" height="12px" alt="next">
                         </button>
@@ -404,6 +415,60 @@
         </div>
     </div>
 
+
+
+
+    <div class="modal" id="previews2">
+        <div class="modal__dialog">
+            <button class="modal-close" type="button">
+                <img src="images/close.png" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__foto" src="images/1.png" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__foto" src="images/2.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title 2</h3>
+                        <div class="modal-work__info">
+                            Categoriy<span class="modal-work__info-span">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Agensy</div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat, obcaecati veritatis libero fugit temporibus! Aspernatur, placeat commodi ipsum dolorum veniam expedita distinctio blanditiis ullam fuga, dignissimos ad deserunt
+                            aliquid!
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, ex saepe totam facilis labore sequi laboriosam nulla laborum assumenda, obcaecati impedit dignissimos magni quo cupiditate mollitia amet voluptatem distinctio.
+                            At?
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work_btn modal-work_btn--back slickBack" type="button">
+                            <img src="images/next.png" height="12px" alt="back">
+                            Back
+                        </button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">
+                            Next
+                            <img src="images/next.png" height="12px" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal" id="resume">
         <div class="modal__dialog">
@@ -588,7 +653,7 @@
         </div>
     </div>
     </div>
-
+    <script src="slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 

@@ -1,7 +1,7 @@
 let portfolio__col = document.querySelectorAll(".portfolio__col")
 let close = document.querySelectorAll(".modal-close")
 let modal = document.querySelectorAll(".modal")
-
+let modalDialog = document.querySelectorAll(".modal__dialog")
 
 // Фильтр работ
 document.body.addEventListener("click", showWorks)
@@ -40,9 +40,40 @@ document.body.addEventListener("click", (event) => {
 
 //Закрываем окно при клике на иконку крестика
 function closeModal() {
-    openModal.firstElementChild.style.transform = "rotateX(90deg)"
+    modalDialog.forEach((i) => {
+        i.style.transform = "rotateX(90deg)"
+    })
     setTimeout(() => {
-        openModal.style.display = "none";
+        modal.forEach((i) => i.style.display = "none")
         document.querySelector("body").classList.remove("no__scroll")
     }, 200)
 }
+
+
+// sliderjquery slick
+$(function() {
+    $('[data-slider="slick"]').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+    });
+
+    $(".slickBack").on("click", function(event) {
+        event.preventDefault();
+        let currentSlider = $(this).parents(
+            ".modal").find('[data-slider="slick"]')
+        currentSlider.slick("slickPrev")
+    })
+    $(".slickNext").on("click", function(event) {
+        event.preventDefault();
+        let currentSlider = $(this).parents(
+            ".modal").find('[data-slider="slick"]')
+        currentSlider.slick("slickNext")
+    })
+
+
+
+})
