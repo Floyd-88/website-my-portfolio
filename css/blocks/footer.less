@@ -7,11 +7,21 @@
 
 .footer__inner {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+   
+    @media @tablet {
+        justify-content: center; 
+    }
+
 }
 .footer_credits {
     display: flex;
     align-items: center;
+
+    @media @tablet {
+        margin-bottom: 0.8rem;
+    }
 }
 .footer__copyright {
     padding-right: 1.5rem;
@@ -19,13 +29,22 @@
     font-size: 1rem;
     color: #8d8d8e;
     border-right: 1px solid fade(#8d8d8e, 30%);
+
+    @media @mobile-sm {
+         padding-right: 1rem;
+    }
 }
 .footer__social {
     display: flex;
     align-items: center;
     a{
-        margin-right: 1rem;
+        margin: 1rem;
         text-decoration: none;
+
+        @media @mobile-sm {
+            margin: 0 0.5rem;
+            align-items: initial;
+        }
     }
    
 }
@@ -33,11 +52,22 @@
     display: flex;
     align-items: center;
     font-size: 1rem;
+
+    @media @mobile-sm {
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
 }
 .footer__nav-link {
     margin-left: 1.5rem;
 color: #8d8d8e;
 text-decoration: none;
+
+@media @mobile-sm {
+    padding-bottom: 1rem;
+    margin: 0 0.5rem;
+}
 
 &:hover {
 text-decoration: underline;

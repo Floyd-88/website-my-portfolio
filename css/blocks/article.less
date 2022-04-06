@@ -9,11 +9,20 @@
 }
 .articles_item {
     margin-bottom: 2rem;
+
+    @media @mobile {
+        margin: 0 auto 3rem;
+        max-width: 370px;
+    }
 }
 
 .articles_col {
     width: 33.333%;
     padding: 0 1rem;
+
+    @media @mobile {
+        width: 100%;
+     }
 }
 .articles_header {
     position: relative;
@@ -41,6 +50,13 @@
     display: block;
     width: 100%;
     height: auto;
+
+    a {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
 }
 .articles_content {
     margin-bottom: 2rem;

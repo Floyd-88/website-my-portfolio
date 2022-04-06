@@ -1,0 +1,9 @@
+.burger {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.burger__icon {
+  width: 100%;
+  height: auto;
+}

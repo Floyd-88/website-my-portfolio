@@ -27,6 +27,10 @@
      }
      + .btn {
          margin-left: 1rem;
+
+         @media @mobile-sm {
+             margin-left: 0;
+          }
      }
 
      &--sm {
@@ -43,5 +47,27 @@
             font-size: 0.8rem
 
      }
+
+     @media @mobile {
+        min-width: 7.33rem;
+    padding: 0.9em 0.9em;
+    font-size: .9rem;
+      }
+
+     @media @mobile-sm {
+        width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+      }
+    //  @media @tablet {
+    //     min-width: 9.33rem;
+    //     padding: 1em 1em;
+    //     font-size: .9rem;
+    //   }
+    //   @media @notebook {
+    //     min-width: 9.33rem;
+    //     padding: 1.05em 1em;
+    //     font-size: 1rem;
+    //   }
 }
 

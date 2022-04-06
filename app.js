@@ -77,3 +77,19 @@ $(function() {
 
 
 })
+
+// Раскрытие навигации
+
+let navLink = document.querySelectorAll(".nav__link")
+
+burger.addEventListener("click", showNav)
+
+function showNav(event) {
+
+    event.preventDefault()
+    nav.classList.toggle("show")
+        // setTimeout(function() {
+        //     navLink.forEach((i) => i.classList.toggle("show__link"))
+        // }, 100)
+
+}
