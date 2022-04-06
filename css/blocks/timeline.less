@@ -18,6 +18,15 @@
         top: 0;
         left: 50%;
         z-index: 1;
+
+        @media @mobile-sm {
+            display: none;
+        }
+    }
+
+    @media @mobile-sm {
+        margin: 2.2rem auto;
+        flex-direction: column;
     }
 }
 .text__right {
@@ -30,9 +39,23 @@ text-align: right;
     &--left {
         text-align: right;
         padding-right: 3.2rem;
+
+        @media @mobile-sm {
+            text-align: center;
+            padding-right: 0;
+        }
     }
     &--right {
         padding-left: 3.2rem;
+
+        @media @mobile-sm {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+
+    @media @mobile-sm {
+        width: 100%;
     }
 }
 .timeline__title {
@@ -41,6 +64,11 @@ text-align: right;
     color: @black;
     text-transform: uppercase;
     font-weight: 700;
+    
+    @media @mobile-sm {
+    margin-bottom: 1.5rem;
+    }
+
 }
 .timeline__item {
     margin-bottom: 2.6rem;
@@ -75,4 +103,8 @@ text-align: right;
     line-height: 1.5;
     color: @grey;
     font-weight: 300;
+
+    @media @mobile-sm {
+        margin-bottom: 2rem;
+        }
 }
