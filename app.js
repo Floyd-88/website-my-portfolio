@@ -7,8 +7,10 @@ let modalDialog = document.querySelectorAll(".modal__dialog")
 document.body.addEventListener("click", showWorks)
 
 function showWorks(e) {
-    e.preventDefault()
+
+
     if (!e.target.closest(".works_nav-link")) return
+    e.preventDefault()
     let link = e.target.dataset.link
     portfolio__col.forEach(i => {
         (i.dataset.work === link) ? i.style.display = "flex": i.style.display = "none";

@@ -30,11 +30,11 @@
                     </div>
                 </div>
                 <div class="nav" id="nav">
-                    <a class="nav__link active" href="#">Работы</a>
-                    <a class="nav__link" href="#">Про меня</a>
-                    <a class="nav__link" href="#">Блог</a>
-                    <a class="nav__link" href="#">Контакт</a>
-                    <a class="nav__link nav__link--btn" data-btn="contact" href="#" onclick="showModal(this)">Найми меня</a>
+                    <a class="nav__link active" href="#works">Работы</a>
+                    <a class="nav__link" href="#aboutMe">Обо мне</a>
+                    <a class="nav__link" href="#news">Новости</a>
+                    <!-- <a class="nav__link" href="#">Контакты</a> -->
+                    <a class="nav__link nav__link--btn" data-btn="contact" href="#" onclick="showModal(this)">Мои контакты</a>
                 </div>
                 <button class="burger" id="burger" type="button">
                         <img class="burger__icon" src="images/burger.png" alt="">
@@ -71,7 +71,8 @@
                             <img src="images/Twitter.png" alt="">
                         </a>
                     </div>
-                    <a class="btn" href="" data-btn="contact" onclick="showModal(this)">Найми меня</a>
+                    <button class="btn" data-btn="contact" onclick="showModal(this)">Мои контакты</button>
+                    <!-- <a class="btn" href="" data-btn="contact" onclick="showModal(this)">Найми меня</a> -->
                     <button class="btn" data-btn="resume" onclick="showModal(this)">Посмотреть резюме</button>
                 </div>
                 <img class="intro__foto" src="images/designer_photo.png" alt="my foto">
@@ -82,7 +83,7 @@
     </section>
 
     <!-- block works -->
-    <div class="works">
+    <div class="works" id="works">
         <div class="container">
             <div class="works__nav">
                 <a class="works_nav-link" data-link="all" href="">Все</a>
@@ -94,89 +95,92 @@
             <div class="portfolio">
                 <div class="portfolio__col" data-work="website">
                     <div class="work" data-btn="previews" onclick="showModal(this)">
-                        <img class="work__image" src="images/1.png" alt="">
+                        <img class="work__image" src="images/works/resturant/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
                                 CATEGORY: website
                             </div>
                             <div class="work__title">
-                                PROJECT TITLE
-                                <time datetime="2022-04-03" class="work__date">2022</time>
+                                Uber Eats - Рестораны Москвы
+                                <!-- <time datetime="2022-04-03" class="work__date">2022</time> -->
                             </div>
 
                         </div>
                     </div>
                 </div>
+
                 <div class="portfolio__col" data-work="website">
                     <div class="work" data-btn="previews2" onclick="showModal(this)">
-                        <img class="work__image" src="images/1.png" alt="">
+                        <img class="work__image" src="images/works/Naruto/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
                                 CATEGORY: website
                             </div>
                             <div class="work__title">
-                                PROJECT TITLE
-                                <time datetime="2022-04-03" class="work__date">2022</time>
+                                Naruto
+                                <!-- <time datetime="2022-04-03" class="work__date">2022</time> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-work="website">
+                    <div class="work" data-btn="previews3" onclick="showModal(this)">
+                        <img class="work__image" src="images/works/PiperNet_Is_Here/1.png" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                CATEGORY: website
+                            </div>
+                            <div class="work__title">
+                                PiperNet Is Here
+                                <!-- <time datetime="2022-04-03" class="work__date">2022</time> -->
                             </div>
 
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col" data-work="interection">
-                    <div class="work">
-                        <img class="work__image" src="images/1.png" alt="">
+
+                <div class="portfolio__col" data-work="app">
+                    <div class="work" data-btn="previews4" onclick="showModal(this)">
+                        <img class="work__image" src="images/works/react/1.png" alt="">
                         <div class="work__content">
                             <div class="work__cat">
-                                CATEGORY: interection
+                                CATEGORY: app
                             </div>
                             <div class="work__title">
-                                PROJECT TITLE
-                                <time datetime="2022-04-03" class="work__date">2022</time>
+                                React приложение
+                                <!-- <time datetime="2022-04-03" class="work__date">2022</time> -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-work="app">
+                    <div class="work" data-btn="previews5" onclick="showModal(this)">
+                        <img class="work__image" src="images/works/Rocket/2.png" alt="Rocket">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                CATEGORY: app
+                            </div>
+                            <div class="work__title">
+                                Game Rocket
+                                <!-- <time datetime="2022-04-03" class="work__date">2022</time> -->
                             </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__col" data-work="app">
-                    <div class="work">
-                        <img class="work__image" src="images/1.png" alt="">
+                    <div class="work" data-btn="previews6" onclick="showModal(this)">
+                        <img class="work__image" src="images/works/calc/1.png" alt="Calc">
                         <div class="work__content">
                             <div class="work__cat">
                                 CATEGORY: app
                             </div>
                             <div class="work__title">
-                                PROJECT TITLE
-                                <time datetime="2022-04-03" class="work__date">2022</time>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__col" data-work="app">
-                    <div class="work">
-                        <img class="work__image" src="images/1.png" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">
-                                CATEGORY: app
-                            </div>
-                            <div class="work__title">
-                                PROJECT TITLE
-                                <time datetime="2022-04-03" class="work__date">2022</time>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__col" data-work="app">
-                    <div class="work">
-                        <img class="work__image" src="images/1.png" alt="">
-                        <div class="work__content">
-                            <div class="work__cat">
-                                CATEGORY: app
-                            </div>
-                            <div class="work__title">
-                                PROJECT TITLE
-                                <time datetime="2022-04-03" class="work__date">2022</time>
+                                Калькулятор для андройд
+                                <!-- <time datetime="2022-04-03" class="work__date">2022</time> -->
                             </div>
 
                         </div>
@@ -184,12 +188,12 @@
                 </div>
             </div>
 
-            <div class="text__center"><a class="btn btn--sm" href="">LOAD MORE WORK</a></div>
+            <div class="text__center"><a class="btn btn--sm" href="">Загрузить больше</a></div>
         </div>
     </div>
 
     <!-- block about me -->
-    <section class="about">
+    <section class="about" id="aboutMe">
         <div class="container">
             <div class="about_inner">
                 <div class="about__foto">
@@ -199,14 +203,12 @@
                     <h3 class="about__title">Обо мне</h3>
                     <h2 class="about__bigTitle">Кто я</h2>
                     <div class="about__text">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis accusantium blanditiis consequuntur obcaecati eaque ullam itaque, repudiandae amet ipsam quia odio voluptatum? Unde rerum provident, architecto ipsam neque minima cupiditate
-                            inventore eaque. Consequuntur, asperiores eligendi consequatur ipsa, ducimus facilis distinctio delectus hic earum quos rerum aliquid itaque officia? In fuga minus, </p>
-                        <p>deleniti laudantium quo ut ratione iste eos sequi, magnam dolor, beatae dicta nostrum ab sunt quos? Ullam numquam commodi ipsam rerum in alias ducimus? Sit autem quam facere at molestias commodi accusamus ipsa, quo quisquam nam
-                            eaque voluptatem quibusdam alias repudiandae excepturi cumque minus possimus? Dicta unde doloremque nulla cupiditate magnam nostrum fugiat eum repellendus, repellat, dolorem quod fuga asperiores sit, quos corrupti nam iusto!
-                            Nisi mollitia, labore at voluptate fugit dolorum sit nihil </p>
-                        <p>obcaecati minima adipisci. Sit consequuntur dolor autem perferendis nostrum aut maxime repellendus fugiat voluptatem adipisci illum, repellat excepturi natus accusantium. Maxime quaerat temporibus ex necessitatibus!</p>
+                        <p>Меня зовут Илья, мне 33 года, за это время я успел поработать в ряде крупных компаний как на технических должностях, так и на руководящих, при этом самый первый мой опыт работ, хоть и не долгий, был связан с IT-сферой в далеком
+                            2011 году. И хоть я и решил связать свою судьбу в дальнейшем с другими отраслями, в глубине души IT меня никогда не оставляла. </p>
+                        <p>И вот я решил вернуться к тому, с чего начинал свою карьеру, однако за долгие годы данная сфера шагнула вперед и мне пришлось фактически с нуля изучать новые технологии и инструменты.</p>
+                        <p>В данный момент у меня имеется огромное желание развиваться в этом направлении, применять на практике полученные знания, повышать свои скилы и в будущем постараться внести свой вклад в развитие IT-индустрии.</p>
                     </div>
-                    <a class="btn" href="" data-btn="contact" onclick="showModal(this)">Найми меня</a>
+                    <button class="btn" data-btn="contact" onclick="showModal(this)">Мои контакты</button>
                     <button class="btn" data-btn="resume" onclick="showModal(this)">Посмотреть резюме</button>
                 </div>
             </div>
@@ -214,20 +216,12 @@
     </section>
 
     <!-- block reviews -->
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <div class="container">
             <div class="reviews__item">
                 <div class="reviews__text">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nisi sit aspernatur ipsa quis voluptatibus, id cupiditate at blanditiis a velit aliquam? Suscipit mollitia, est officia iusto totam nihil ut similique ipsum veritatis eius. Qui harum dignissimos
-                        perferendis commodi, molestiae ea minus repudiandae recusandae, iusto excepturi minima odit, id
-                    </p>
-                    <p>
-                    </p> consequuntur facere provident nostrum vitae? Doloribus eligendi explicabo odit ipsa vero ullam quia vitae eius rerum, ipsam at asperiores sequi fugit, corporis pariatur ad totam aliquam magnam quam labore omnis quae nobis iure. Animi
-                    tempore obcaecati vitae provident doloremque, a similique ipsam at delectus ad culpa perferendis aperiam facere voluptatem vero. consequuntur facere provident nostrum vitae? Doloribus eligendi explicabo odit ipsa vero ullam quia vitae
-                    eius rerum, ipsam at asperiores sequi fugit, corporis pariatur ad totam aliquam magnam quam labore omnis quae nobis iure. Animi tempore obcaecati vitae provident doloremque, a similique ipsam at delectus ad culpa perferendis aperiam
-                    facere voluptatem vero.
-                    </p>
+                        Когда-нибудь, возможно, в этом блоке будут размещаться отзывы о моих выполненных заказах или проделанной работе по разработке сайтов и веб-приложений. А пока что, этот блок носит чисто визуальную составляющую.
                     </p>
                 </div>
                 <div class="reviews__author">
@@ -248,73 +242,80 @@
     </div>
 
     <!-- block news -->
-    <section class="news">
+    <section class="news" id="news">
         <div class="container">
             <div class="news__header">
-                <h3 class="news__title">read me</h3>
-                <div class="news__text">Sometimes i write something smart</div>
+                <h3 class="news__title">Новости</h3>
+                <div class="news__text">из сферы IT-индустрии</div>
             </div>
             <div class="articles">
                 <div class="articles_col">
                     <div class="articles_item">
                         <div class="articles_header">
-                            <div class="articles_date">04 <br> апреля</div>
+                            <!-- <div class="articles_date">04 <br> апреля</div> -->
                             <div class="articles_foto">
-                                <a href="#"> <img src="images/cover_photo.png" alt=""></a>
+                                <a target="_blank" href="https://blog.sibirix.ru/web-development-trends-2022/"> <img src="images/news/1.jpg" alt="тренды web"></a>
 
                             </div>
                         </div>
                         <div class="articles_content">
                             <h4 class="articles_title">
-                                <a href="#">TEN THE BEST APP IN 2022</a>
+                                <a target="_blank" href="https://blog.sibirix.ru/web-development-trends-2022/">Тренды веб-разработки 2022</a>
                             </h4>
-                            <div class="articles_cat">CATEGORY</div>
-                            <div class="articles_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                            <div class="articles_cat">IT сфера</div>
+                            <div class="articles_text">Пока дизайнеры читают про то, что в 2022 году в моде будут гигантские и странные шрифты (вообще-то уже), нам захотелось посмотреть на совсем другие тренды: что будет происходить со сферой разработки в ближайшее время, какие
+                                изменения ждут разработчиков и что уже воплощается, но продолжит развиваться дальше — про всё это рассказываем в сегодняшнем обзоре.</div>
                         </div>
-                        <a class="btn btn--sm" href="">Подробнее</a>
+
                     </div>
+                    <a target="_blank" class="btn btn--sm btn--sm--n" href="https://blog.sibirix.ru/web-development-trends-2022/">Подробнее</a>
                 </div>
+
                 <div class="articles_col">
                     <div class="articles_item">
                         <div class="articles_header">
-                            <div class="articles_date">04 <br> апреля</div>
+                            <!-- <div class="articles_date">04 <br> апреля</div> -->
                             <div class="articles_foto">
-                                <a href="#"> <img src="images/cover_photo.png" alt=""></a>
+                                <a target="_blank" href="https://ru.hexlet.io/blog/posts/perspektivnyh-tehnologii-2022"> <img src="images/news/2.jpg" alt="popular web"></a>
 
                             </div>
                         </div>
+
                         <div class="articles_content">
                             <h4 class="articles_title">
-                                <a href="#">TEN THE BEST APP IN 2022</a>
+                                <a target="_blank" href="https://ru.hexlet.io/blog/posts/perspektivnyh-tehnologii-2022">Четыре самых перспективных технологии 2022 года</a>
                             </h4>
-                            <div class="articles_cat">CATEGORY</div>
-                            <div class="articles_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                            <div class="articles_cat">IT сфера</div>
+                            <div class="articles_text">Главные инструменты, сервисы и подходы, которые будут популярны в этом году.</div>
                         </div>
-                        <a class="btn btn--sm" href="">Подробнее</a>
+
                     </div>
+                    <a target="_blank" class="btn btn--sm btn--sm--n" href="https://ru.hexlet.io/blog/posts/perspektivnyh-tehnologii-2022">Подробнее</a>
                 </div>
+
                 <div class="articles_col">
                     <div class="articles_item">
                         <div class="articles_header">
-                            <div class="articles_date">04 <br> апреля</div>
+                            <!-- <div class="articles_date">04 <br> апреля</div> -->
                             <div class="articles_foto">
-                                <a href="#"> <img src="images/cover_photo.png" alt=""></a>
+                                <a target="_blank" href="https://www.cossa.ru/trends/301521/"> <img src="images/news/3.jpg" alt="trend it"></a>
 
                             </div>
                         </div>
                         <div class="articles_content">
                             <h4 class="articles_title">
-                                <a href="#">TEN THE BEST APP IN 2022</a>
+                                <a target="_blank" href="https://www.cossa.ru/trends/301521/">Обзор IT рынка от ведущих экспертов</a>
                             </h4>
-                            <div class="articles_cat">CATEGORY</div>
-                            <div class="articles_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                            <div class="articles_cat">IT сфера</div>
+                            <div class="articles_text">Только отборные тренды от крепких разработчиков. Cossa выяснила, какие главные тренды фронтенд- и бэкенд-разработки нас ждут в 2022 году.</div>
                         </div>
-                        <a class="btn btn--sm" href="">Подробнее</a>
+
                     </div>
+                    <a target="_blank" class="btn btn--sm btn--sm--n" href="https://www.cossa.ru/trends/301521/">Подробнее</a>
                 </div>
             </div>
             <div class="news__footer">
-                <a class="news__link" href="#">Больше сообщений</a>
+                <a target="_blank" class="news__link" href="#">Больше сообщений</a>
             </div>
         </div>
 
@@ -351,11 +352,10 @@
                     </div>
                 </div>
                 <div class="footer__nav">
-                    <a class="footer__nav-link" href="#">Работы</a>
-                    <a class="footer__nav-link" href="#">Обо мне</a>
-                    <a class="footer__nav-link" href="#">Блог</a>
-                    <a class="footer__nav-link" href="#">Контакт</a>
-                    <a class="footer__nav-link footer__nav-link--btn" href="#" data-btn="contact" onclick="showModal(this)">Найми меня</a>
+                    <a class="footer__nav-link" href="#works">Работы</a>
+                    <a class="footer__nav-link" href="#aboutMe">Обо мне</a>
+                    <a class="footer__nav-link" href="#news">Новости</a>
+                    <a class="footer__nav-link footer__nav-link--btn" href="#" data-btn="contact" onclick="showModal(this)">Мои контакты</a>
                 </div>
             </div>
         </div>
@@ -372,34 +372,78 @@
                 <div class="modal-work__previews">
                     <div data-slider="slick">
                         <div>
-                            <img class="modal-work__foto" src="images/1.png" alt="">
+                            <img class="modal-work__foto" src="images/works/resturant/1.png" alt="resturant">
                         </div>
                         <div>
-                            <img class="modal-work__foto" src="images/2.png" alt="">
+                            <img class="modal-work__foto" src="images/works/resturant/2.png" alt="resturant">
                         </div>
                         <div>
-                            <img class="modal-work__foto" src="images/2.png" alt="">
+                            <img class="modal-work__foto" src="images/works/resturant/3.png" alt="resturant">
                         </div>
                     </div>
                 </div>
                 <div class="modal-work__content">
                     <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title</h3>
+                        <h3 class="modal-work__title">Uber Eats - Рестораны Москвы</h3>
                         <div class="modal-work__info">
                             Categoriy<span class="modal-work__info-span">|</span> 2022
                         </div>
                     </div>
 
                     <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Agensy</div>
+                        <div class="modal-work__client-title">Посмотреть:</div>
+                        <div class="modal-work__client-company"> <a target="_blink" href="https://floyd-88.github.io/Restaurant-website-layout/index.html">Ссылка на сайт</a></div>
                     </div>
                     <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat, obcaecati veritatis libero fugit temporibus! Aspernatur, placeat commodi ipsum dolorum veniam expedita distinctio blanditiis ullam fuga, dignissimos ad deserunt
-                            aliquid!
+                        <p>Верстка двухстраничного лендинга с адаптивом под мобильные экраны
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, ex saepe totam facilis labore sequi laboriosam nulla laborum assumenda, obcaecati impedit dignissimos magni quo cupiditate mollitia amet voluptatem distinctio.
-                            At?
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work_btn modal-work_btn--back slickBack" type="button">
+                            <img src="images/next.png" height="12px" alt="back">
+                            Back
+                        </button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">
+                            Next
+                            <img src="images/next.png" height="12px" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="previews2">
+        <div class="modal__dialog">
+            <button class="modal-close" type="button">
+                <img src="images/close.png" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__foto" src="images/works/Naruto/2.png" alt="naruto">
+                        </div>
+                        <div>
+                            <img class="modal-work__foto" src="images/works/Naruto/3.png" alt="naruto">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Naruto</h3>
+                        <div class="modal-work__info">
+                            Categoriy<span class="modal-work__info-span">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Посмотреть:</div>
+                        <div class="modal-work__client-company"><a target="_blink" href="https://floyd-88.github.io/website-Naruto/">Ссылка на сайт</a></div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Тематический веб-сайт по вселенной одноименного произведения Масаши Кишимото "Наруто"
                         </p>
                     </div>
                     <div class="modal-work__footer">
@@ -418,9 +462,7 @@
     </div>
 
 
-
-
-    <div class="modal" id="previews2">
+    <div class="modal" id="previews3">
         <div class="modal__dialog">
             <button class="modal-close" type="button">
                 <img src="images/close.png" alt="close">
@@ -429,32 +471,164 @@
                 <div class="modal-work__previews">
                     <div data-slider="slick">
                         <div>
-                            <img class="modal-work__foto" src="images/1.png" alt="">
+                            <img class="modal-work__foto" src="images/works/PiperNet_Is_Here/1.png" alt="PiperNet_Is_Here">
                         </div>
                         <div>
-                            <img class="modal-work__foto" src="images/2.png" alt="">
+                            <img class="modal-work__foto" src="images/works/PiperNet_Is_Here/2.png" alt="PiperNet_Is_Here">
                         </div>
 
                     </div>
                 </div>
                 <div class="modal-work__content">
                     <div class="modal-work__header">
-                        <h3 class="modal-work__title">Project title 2</h3>
+                        <h3 class="modal-work__title">PiperNet Is Here</h3>
                         <div class="modal-work__info">
                             Categoriy<span class="modal-work__info-span">|</span> 2022
                         </div>
                     </div>
 
                     <div class="modal-work__client">
-                        <div class="modal-work__client-title">Client:</div>
-                        <div class="modal-work__client-company">Agensy</div>
+                        <div class="modal-work__client-title">Посмотреть:</div>
+                        <div class="modal-work__client-company"><a target="_blink" href="https://floyd-88.github.io/-Landing_PiedPiper/PiedPiperLanding.html">Ссылка на сайт</a></div>
                     </div>
                     <div class="modal-work__text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat, obcaecati veritatis libero fugit temporibus! Aspernatur, placeat commodi ipsum dolorum veniam expedita distinctio blanditiis ullam fuga, dignissimos ad deserunt
-                            aliquid!
+                        <p>Одностраничный лендинг адаптированный под различные экраны
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, ex saepe totam facilis labore sequi laboriosam nulla laborum assumenda, obcaecati impedit dignissimos magni quo cupiditate mollitia amet voluptatem distinctio.
-                            At?
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work_btn modal-work_btn--back slickBack" type="button">
+                            <img src="images/next.png" height="12px" alt="back">
+                            Back
+                        </button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">
+                            Next
+                            <img src="images/next.png" height="12px" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="previews4">
+        <div class="modal__dialog">
+            <button class="modal-close" type="button">
+                <img src="images/close.png" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__foto" src="images/works/react/1.png" alt="reactJS">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">React приложение</h3>
+                        <div class="modal-work__info">
+                            Categoriy<span class="modal-work__info-span">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Посмотреть:</div>
+                        <div class="modal-work__client-company"><a target="_blink" href="https://github.com/Floyd-88/ReactPrioject">Ссылка на Githab</a></div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Разработка социальной сети на ReactJS (проект еще не окончен, работы ведутся)
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work_btn modal-work_btn--back slickBack" type="button">
+                            <img src="images/next.png" height="12px" alt="back">
+                            Back
+                        </button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">
+                            Next
+                            <img src="images/next.png" height="12px" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="previews5">
+        <div class="modal__dialog">
+            <button class="modal-close" type="button">
+                <img src="images/close.png" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+
+                        <div>
+                            <img class="modal-work__foto" src="images/works/Rocket/2.png" alt="Rocket">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Игра Ракета</h3>
+                        <div class="modal-work__info">
+                            Categoriy<span class="modal-work__info-span">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Посмотреть:</div>
+                        <div class="modal-work__client-company"><a target="_blink" href="https://floyd-88.github.io/Rocket/blocs.html">Ссылка на игру</a></div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Игра делалась для мобильных экранов, поэтому не адаптирована под большие мониторы. Писалась на JS, затем была собрана через приложение Android Studio в apk. Протестирована на нескольких смартфонах, работоспособна.
+                        </p>
+                    </div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work_btn modal-work_btn--back slickBack" type="button">
+                            <img src="images/next.png" height="12px" alt="back">
+                            Back
+                        </button>
+                        <button class="modal-work_btn modal-work_btn--next slickNext" type="button">
+                            Next
+                            <img src="images/next.png" height="12px" alt="next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="previews6">
+        <div class="modal__dialog">
+            <button class="modal-close" type="button">
+                <img src="images/close.png" alt="close">
+            </button>
+            <div class="modal-work">
+                <div class="modal-work__previews">
+                    <div data-slider="slick">
+
+                        <div>
+                            <img class="modal-work__foto" src="images/works/calc/1.png" alt="Calc">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Калькулятор</h3>
+                        <div class="modal-work__info">
+                            Categoriy<span class="modal-work__info-span">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Посмотреть:</div>
+                        <div class="modal-work__client-company"><a target="_blink" href="https://floyd-88.github.io/calc/calc.html">Ссылка на веб-версию калькулятора</a></div>
+                    </div>
+                    <div class="modal-work__text">
+                        <p>Калькулятор написан на JS для мобильных смартфонов на операционной системе андройд. Приложение протестировано на нескольких смартфонах, работоспособно.
                         </p>
                     </div>
                     <div class="modal-work__footer">
@@ -488,34 +662,39 @@
                 <div class="timeline">
                     <div class="timeline__col timeline__col--left">
                         <h4 class="timeline__title">
-                            опыт
+                            опыт работы
                         </h4>
                         <div class="timeline__item">
-                            <div class="timeline__date" datetime="04-04-2022">2019 - <b>настоящие время</b></div>
-                            <div class="timeline__sublime">Фрилансер</div>
-                            <div class="timeline__position">Арт директор</div>
-                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi.</div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__date" datetime="04-04-2022">2019 - <b>настоящие время</b></div>
-                            <div class="timeline__sublime">Фрилансер</div>
-                            <div class="timeline__position">Арт директор</div>
+                            <div class="timeline__date" datetime="04-04-2022">07.2011 - 11.2011</div>
+                            <div class="timeline__sublime">ООО "Эверест"</div>
+                            <div class="timeline__position">Программист</div>
                             <div class="timeline__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi. Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi
+
                             </div>
                         </div>
                         <div class="timeline__item">
-                            <div class="timeline__date" datetime="04-04-2022">2019 - <b>настоящие время</b></div>
-                            <div class="timeline__sublime">Фрилансер</div>
-                            <div class="timeline__position">Арт директор</div>
-                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi.</div>
+                            <div class="timeline__date" datetime="04-04-2022">12.2011 - 2013</div>
+                            <div class="timeline__sublime">Газпром Трансгаз Ставрополь</div>
+                            <div class="timeline__position">Техник ЛЭС</div>
+                            <div class="timeline__text">
+
+                            </div>
                         </div>
                         <div class="timeline__item">
-                            <div class="timeline__date" datetime="04-04-2022">2019 - <b>настоящие время</b></div>
-                            <div class="timeline__sublime">Фрилансер</div>
-                            <div class="timeline__position">Арт директор</div>
-                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi.</div>
+                            <div class="timeline__date" datetime="04-04-2022">2013 - 2018</div>
+                            <div class="timeline__sublime">АО «ГК «ЭнергоГазИнжиниринг»</div>
+                            <div class="timeline__position">Помощник Главного инженера проекта</div>
+                            <div class="timeline__text">
+
+                            </div>
+                        </div>
+                        <div class="timeline__item">
+                            <div class="timeline__date" datetime="04-04-2022">2019 - 2022</div>
+                            <div class="timeline__sublime">РТК СК</div>
+                            <div class="timeline__position">Главный специалист</div>
+                            <div class="timeline__text">
+
+                            </div>
                         </div>
                     </div>
                     <div class="timeline__col timeline__col--right">
@@ -526,22 +705,22 @@
                             <div class="timeline__date" datetime="04-04-2022">2005 - 2010</b>
                             </div>
                             <div class="timeline__sublime">Геология нефти и газа</div>
-                            <div class="timeline__position">СевКавГТУ</div>
-                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi.</div>
+                            <div class="timeline__position">Северо-Кавказский Государственный Технический Университет </div>
+                            <div class="timeline__text">Специальность горный инженер</div>
                         </div>
-                        <div class="timeline__item">
+                        <!-- <div class="timeline__item">
                             <div class="timeline__date" datetime="04-04-2022">2005 - 2010</b>
                             </div>
                             <div class="timeline__sublime">Геология нефти и газа</div>
                             <div class="timelime__position">СевКавГТУ</div>
                             <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi.</div>
-                        </div>
+                        </div> -->
                         <h4 class="timeline__title">Навыки</h4>
                         <div class="progress-bar">
                             <div class="progress-bar__item">
                                 <div class="progress-bar__left">
                                     <div class="progress-bar__title">
-                                        JavaScript
+                                        HTML
                                     </div>
                                 </div>
                                 <div class="progress-bar__right">
@@ -552,11 +731,10 @@
                                 </div>
                             </div>
 
-
                             <div class="progress-bar__item">
                                 <div class="progress-bar__left">
                                     <div class="progress-bar__title">
-                                        JavaScript
+                                        CSS, препроцессор LESS
                                     </div>
                                 </div>
                                 <div class="progress-bar__right">
@@ -567,11 +745,10 @@
                                 </div>
                             </div>
 
-
                             <div class="progress-bar__item">
                                 <div class="progress-bar__left">
                                     <div class="progress-bar__title">
-                                        JavaScript
+                                        Адаптивная верстка под мобильные устройства
                                     </div>
                                 </div>
                                 <div class="progress-bar__right">
@@ -596,25 +773,77 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <h4 class="timeline__title">Награды</h4>
-                        <div class="timeline__item">
-                            <div class="timeline__date" datetime="04-04-2022">2019</div>
-                            <div class="timeline__sublime">The best app Interface</div>
-                            <div class="timeline__position">Арт директор</div>
-                            <div class="timeline__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex iste, dolorum pariatur fuga accusamus ad. Reiciendis atque dolore, cumque dolorem iste ad mollitia libero, iusto officia corrupti voluptatibus animi.</div>
 
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">
+                                        Основы работы с GIT
+                                    </div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar_progres" style="width: 70%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="timeline__title">Курсы</h4>
+                        <div class="timeline__item">
+                            <!-- <div class="timeline__date" datetime="04-04-2022">2019</div> -->
+                            <div class="timeline__sublime">Stepik - JavaScript для начинающих</div>
+                            <div class="timeline__position">Завершил с отличием</div>
+                            <div class="timeline__text">Сертификат можно посмотреть
+                                <a href="https://stepik.org/cert/1383215">по ссылке</a></div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <!-- <div class="timeline__date" datetime="04-04-2022">2019</div> -->
+                            <div class="timeline__sublime">Stepik - Веб-разработка для начинающих: HTML и CSS</div>
+                            <div class="timeline__position">Завершил с отличием</div>
+                            <div class="timeline__text">Сертификат можно посмотреть
+                                <a href="https://stepik.org/cert/1404917">по ссылке</a></div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <!-- <div class="timeline__date" datetime="04-04-2022">2019</div> -->
+                            <div class="timeline__sublime"> FreeCodeCamp - JavaScript Algorithms and Data Structures</div>
+                            <div class="timeline__position">Basic JavaScript, ES6, Debugging, Basic Data Structures, Basic Algorithm Scripting, Object Oriented Programming, Functional Programming, Intermediate Algorithm Scripting</div>
+                            <div class="timeline__text"><a target="_blank" href="https://www.freecodecamp.org/Floyd_88">Ссылка на профиль</a></div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <!-- <div class="timeline__date" datetime="04-04-2022">2019</div> -->
+                            <div class="timeline__sublime"> FreeCodeCamp - Responsive Web Design
+                            </div>
+                            <div class="timeline__position">Basic HTML and HTML5, Basic CSS, Applied Visual Design, Applied Accessibility</div>
+                            <div class="timeline__text"><a target="_blank" href="https://www.freecodecamp.org/Floyd_88">Ссылка на профиль</a></div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <!-- <div class="timeline__date" datetime="04-04-2022">2019</div> -->
+                            <div class="timeline__sublime"> FreeCodeCamp - Responsive Web Design
+                            </div>
+                            <div class="timeline__position">Basic HTML and HTML5, Basic CSS, Applied Visual Design, Applied Accessibility</div>
+                            <div class="timeline__text"><a target="_blank" href="https://www.freecodecamp.org/Floyd_88">Ссылка на профиль</a></div>
+                        </div>
+
+                        <div class="timeline__sublime">
+                            <!-- <div class="timeline__date" datetime="04-04-2022">2019</div> -->
+                            <div class="timeline__sublime"> Codewars
+                            </div>
+                            <div class="timeline__position">Алгоритмические задачи по JS </div>
+                            <div class="timeline__text"><a target="_blank" href="https://www.codewars.com/users/Floyd_88">Ссылка на профиль</a></div>
                         </div>
                     </div>
 
                 </div>
                 <div class="text__center">
-                    <a class="btn" href="#" data-btn="contact" onclick="showModal(this)">Найми меня</a>
+                    <button class="btn" data-btn="contact" onclick="showModal(this)">Мои контакты</button>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="modal" id="contact">
         <div class="modal__dialog modal__dialog--sm">
@@ -624,7 +853,7 @@
 
             <div class="contact">
                 <div class="contact__left">
-                    <h3 class="modal__title mb-0">Контакты</h3>
+                    <h3 class="modal__title mb-0">контакты</h3>
                     <div class="modal__subtitle">Позвонить или написать мне</div>
 
                     <ul class="contact_info">

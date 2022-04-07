@@ -5,7 +5,7 @@
     min-width: 11.33rem;
     padding: 1.05em 1.7em;
     vertical-align: top;
-    font-size: 1.06rem;
+    font-size: 1rem;
     color: @black;
     text-transform: uppercase;
     text-decoration: none;
@@ -40,6 +40,20 @@
          font-weight: 700;
          border-width: 2px;
          text-align: center;
+         
+         &--n {
+            display: flex;
+    justify-content: center;
+    max-width: 12rem;
+
+    @media @mobile {
+        max-width: 100%;
+    }
+
+    @media @mobile-sm {
+        width: 100%;
+    }
+}
      }
 
      &--thin {
