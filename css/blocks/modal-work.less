@@ -2,10 +2,10 @@
 
 .modal-work {
     display: flex;
-
+    height: 37em;
     @media @mobile {
         flex-wrap: wrap;
-        height: 850px;
+        // height: 850px;
     }
 
     @media @mobile-sm {
@@ -29,12 +29,21 @@
 }
 .modal-work__foto {
     width: auto;
-    height: 22rem;
-    padding: 1.5rem;
+    height: 100%;
+    padding: 3.5rem;
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate3d(-50%, -50%, 0);
+
+@media @mobile {
+    padding: 1rem;
+}
+
+@media @mobile-sm {
+    padding: 5rem;
+}
+
 }
 .modal-work__content {
     position: relative;
@@ -45,6 +54,7 @@ transform: translate3d(-50%, -50%, 0);
         width: 100%;
         padding: 0.5rem 1rem 1.2rem 1rem;
         height: 45%;
+        
     }
 }
 .modal-work__header {
