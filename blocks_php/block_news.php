@@ -1,7 +1,6 @@
 <?php
 require_once('Connection.php');
 ?>
-
 <section class="news" id="news">
     <div class="container">
         <div class="news__header">
@@ -45,18 +44,13 @@ require_once('Connection.php');
                     <a target="_blank" class="btn btn--sm btn--sm--n"
                        href="/redirect.php?id=<?php echo $elem_news['id'] ?>">Подробнее</a>
                 </div>
-
                 <?php
             }
             ?>
-
         </div>
-
         <div class="news__footer">
             <a data-page="1" data-max="<?php echo $db->count_news(); ?>" id="showmore-button" target="_blank"
                class="news__link" href="#">Больше новостей</a>
         </div>
     </div>
-
-
 </section>

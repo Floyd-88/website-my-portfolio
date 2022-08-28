@@ -5,7 +5,7 @@ $(function(){
         page++;
 
         $.ajax({
-            url: '/ajax.php?page=' + page,
+            url: 'ajax/ajaxAddNews.php?page=' + page,
             dataType: 'html',
             success: function(data){
                 $('#showmore-list').append(data);
@@ -16,7 +16,6 @@ $(function(){
         if (page ==  $target.attr('data-max')) {
             $target.hide();
         }
-
         return false;
     });
 });

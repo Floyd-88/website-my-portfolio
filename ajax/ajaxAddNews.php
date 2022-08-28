@@ -1,5 +1,5 @@
 <?php
-require_once('Connection.php');
+require_once('../Connection.php');
 
 // Кол-во элементов
 //$limit = 3;
@@ -8,15 +8,6 @@ require_once('Connection.php');
 $db = new Connection();
 $arr = $db->get_news_ajax();
 
-// Получение записей для текущей страницы
-//$page = intval(@$_GET['page']);
-//$page = (empty($page)) ? 1 : $page;
-//$start = ($page != 1) ? $page * $limit - $limit : 0;
-//
-//$sth = $DBH->prepare("SELECT news_it.id, title, categorie_name, text, img, alt_img, link_news, views FROM news_it JOIN categorie ON news_it.categorie_id = categorie.id  LIMIT {$start}, {$limit}");
-//$sth->execute();
-//$items = $sth->fetchAll(PDO::FETCH_ASSOC);
-
 foreach ($arr as $key => $elem_news) {
     ?>
     <div class="articles_col">
@@ -24,13 +15,14 @@ foreach ($arr as $key => $elem_news) {
             <div class="articles_header">
                 <!-- <div class="articles_date">04 <br> апреля</div> -->
                 <div class="articles_foto">
-                    <a target="_blank" href="/redirect.php?id=<?php echo $elem_news['id'] ?>"> <img src="<?php echo $elem_news['img'] ?>" alt="<?php echo $elem_news['alt_img'] ?>"></a>
-
+                    <a target="_blank" href="/redirect.php?id=<?php echo $elem_news['id'] ?>"> <img
+                                src="<?php echo $elem_news['img'] ?>" alt="<?php echo $elem_news['alt_img'] ?>"></a>
                 </div>
             </div>
             <div class="articles_content">
                 <h4 class="articles_title">
-                    <a target="_blank" href="/redirect.php?id=<?php echo $elem_news['id'] ?>"><?php echo $elem_news['title'] ?></a>
+                    <a target="_blank"
+                       href="/redirect.php?id=<?php echo $elem_news['id'] ?>"><?php echo $elem_news['title'] ?></a>
                 </h4>
                 <div class="articles_cat_views">
                     <div class="articles_cat"><?php echo $elem_news['categorie_name'] ?></div>
@@ -40,15 +32,11 @@ foreach ($arr as $key => $elem_news) {
                         <span><?php echo $elem_news['views'] ?></span>
                     </div>
                 </div>
-
-
                 <div class="articles_text"><?php echo $elem_news['text'] ?></div>
             </div>
-
         </div>
         <a target="_blank" class="btn btn--sm btn--sm--n" href="/redirect.php?id=<?php echo $elem_news['id'] ?>">Подробнее</a>
     </div>
-
     <?php
 }
 ?>

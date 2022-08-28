@@ -1,26 +1,26 @@
 // main ../style.less
 
 .reviews {
-    padding: 4.6rem 0;
+    padding: 3rem 0;
     background: #332f30 url(../images/review_bg.png) center no-repeat;
     position: relative;
 }
 .reviews__item {
     
     width: 100%;
-    max-width: 75rem;
+    //max-width: 75rem;
     margin: auto;
     text-align: center;
 
 }
 .reviews__author {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    margin-top: -3.16rem;
-    left: 0;
-    z-index: 1;
+    //text-align: center;
+    //position: absolute;
+    //width: 100%;
+    //top: 100%;
+    //margin-top: 1.84rem;
+    //left: 0;
+    //z-index: 1;
 }
 .reviews__text {
     font-size: .94rem;
@@ -43,15 +43,19 @@ p {
 .reviews__name {
     margin-bottom: .3rem;
     font-size: 1.066rem;
-    color: @black;
+    color: wheat;
     font-weight: 700;
 }
 .reviews__company {
     margin-bottom: .4rem;
     font-size: 0.94rem;
-    color: @grey-light;
+    color: wheat;
     font-weight: 300;
     font-style: italic;
+}
+.reviews__rating {
+    display: flex;
+    justify-content: center;
 }
 .reviews__rating-star {
     width: 1.15rem;
@@ -60,4 +64,75 @@ p {
     &--unactive {
         opacity: 0.3;
     }
+}
+
+//--------------------------------------------
+.rating-area {
+    overflow: hidden;
+    width: 265px;
+    margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+    display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    width: 42px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 32px;
+    color: lightgrey;
+    text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+    content: '★';
+}
+.rating-area > input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+    position: relative;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.star:before {
+    content: '★';
+    color: gold;
+    text-shadow: 1px 1px #c60;
+    font-size: 35px;
+}
+
+//------------------------------------------------
+
+.block-btn-reviews {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+//---------------------------------
+
+.flickity-enabled {
+    position:relative;width: 100%;
+}
+.flickity-page-dots {
+    display: none;
 }

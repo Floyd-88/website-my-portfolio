@@ -16,6 +16,11 @@
     background: none;
     transition: background-color .2s linear, color .2s linear, box-shadow .2s linear, border-color .2s linear;
     cursor: pointer;
+    &-reviews {
+      color: @white;
+      border: 1px solid @white;
+      background-color: forestgreen;
+    }
      &:focus {
          outline: none;
      }
@@ -63,7 +68,7 @@
      }
 
      @media @mobile {
-        min-width: 7.33rem;
+       width: 100%;
     padding: 0.9em 0.9em;
     font-size: .9rem;
       }
